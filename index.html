@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,12 @@ DOCTYPE html>
 
     <!-- Header and Navigation -->
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Step Into My Space</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -23,23 +24,45 @@ DOCTYPE html>
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello my name Enibe Otega Avwerosuo, I am a student of Lead City University (LCU), and I am in the department of Cyber Security. To be honest, I don't like coding but i do like solving problems and working on new projects and learnig.  .</p>
+        <p>Yeah, that's me in the background 😎. Didn't quite like the background of "my portfolio" being a plain color, so I went for my picture (not that I'm narcissistic, even though it sounds like what a narcissist would say) just because I really like the picture. Anyways, my name is Enibe Otega Avwerosuo (please call me Nathan). I am a student of Lead City University under the department of Cyber Security, and I thin web development sucks 😩 but it something i have to learn and master in my line of study so I'm working on it. </p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of Project 1.</p>
+        <a href="https://github.com/BirdMilk/simple_shell" class="project" style="--bg-image: url('images/alx.jpg');">
+            <h3>Simple Shell</h3>
+            <p class="description">This project is a simple version of the linux shell made during my Software Engineering program with ALX Africa, which was a mini Low-level programming project. It is created using the C programming Language and it can do many functionalities that a real shell does.</p>
+        </a>
+        <a href="https://github.com/BirdMilk/printf" class="project" style="--bg-image: url('images/alx.jpg');">
+            <h3>printf</h3>
+            <p class="description">This project involves creating a custom implementation of the printf function from the C standard library (stdio.h). The goal is to replicate the functionality of the original printf function, allowing formatted output to the standard output stream.
+
+            </p>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Jxr-pBv8YIcWQdGv2OUZblTn18b_GYlJ?usp=drive_link" class="project" style="--bg-image: url('images/machine.jpg');">
+            <h3>Stock Market Prediction Using ML</h3>
+            <p class="description">This project focuses on studying the effectiveness of machine learning models, specifically Support Vector Regression (SVR) and Long Short-Term Memory (LSTM) networks, in predicting stock market trends.            </p>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Jxr-pBv8YIcWQdGv2OUZblTn18b_GYlJ?usp=sharing" class="project" style="--bg-image: url('images/classify.jpg');">
+            <h3>Machine Learning Models for Dry Bean and Skin Lesion Classification</h3>
+            <p class="description">This project focuses on the application of machine learning models for classifying dry beans and using deep learning techniques to classify skin lesions from dermoscopic images. The goal is to evaluate the effectiveness of various models in these classification tasks.</p>
+        </a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <img src="images/python.jpg" alt="Python">
+            <div class="skill-text">Proficient in Python, with experience in machine learning and data science</div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A brief description of Project 2.</p>
+        <div class="skill-box">
+            <img src="path/to/c-image.jpg" alt="C and C++">
+            <div class="skill-text">Knowledgeable in C and C++</div>
         </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>A brief description of Project 3.</p>
+        <div class="skill-box">
+            <img src="images/web.jpg" alt="HTML and CSS">
+            <div class="skill-text">Experienced in HTML and CSS for front-end development</div>
         </div>
     </section>
 
@@ -63,6 +86,9 @@ DOCTYPE html>
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 My Portfolio</p>
+        <div class="social-media">
+            <a href="https://github.com/BirdMilk?tab=repositories">GitHub</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

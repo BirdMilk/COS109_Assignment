@@ -5,12 +5,19 @@
 }
 
 body {
+    background-image: url('images/background.JPG');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #333;
+    background: rgba(46, 46, 46, 0.5);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -18,8 +25,16 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 3em;
+    color: gray;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -44,14 +59,159 @@ section {
     margin-right: auto;
 }
 
+.skill-box {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.skill-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.skill-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-box:hover .skill-text {
+    opacity: 1;
+}
+
+#skills {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 5px 0;
+}
+
 #about, #projects, #contact {
-    background-color: #f4f4f4;
+    background: rgba(46, 46, 46, 0.5);
+    color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
+#about h2 {
+    color: gray;
+}
+
+/* Projects Section */
+#projects {
+    background: rgba(46, 46, 46, 0.5);
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#projects h2 {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
 .project {
-    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232222; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-image 0.3s, opacity 0.3s;
+    width: 300px;
+    height: 200px; 
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.project h3 {
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    z-index: -1;
+    background-image: var(--bg-image);
+}
+
+.project img {
+    display: none;
+}
+
+.project .description {
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+
+.project:hover::before {
+    transform: scale(1.1);
+}
+
+.project:hover h3 {
+    opacity: 0;
+}
+
+.project:hover .description {
+    opacity: 1;
+    color: #fff
 }
 
 footer {
