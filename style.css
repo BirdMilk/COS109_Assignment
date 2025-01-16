@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('images/background.JPG');
     background-size: cover;
@@ -17,9 +21,11 @@ body {
 }
 
 header {
-    background: rgba(46, 46, 46, 0.5);
+    background-image: url('images/space.jpg');
+    opacity: 0.6;
+    background-blend-mode: overlay;
     color: #fff;
-    padding: 10px 0;
+    padding: 280px 0;
     text-align: center;
 }
 
@@ -59,12 +65,16 @@ section {
     margin-right: auto;
 }
 
+#skills h2 {
+    color: gray;
+}
+
 .skill-box {
     position: relative;
     display: inline-block;
     width: 300px;
     height: 200px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .skill-box img {
@@ -132,7 +142,7 @@ section {
 
 #projects h2 {
     width: 100%;
-    text-align: right;
+    text-align: left;
     margin-bottom: 20px;
 }
 .project {
@@ -231,6 +241,10 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+#contact h2 {
+    color: gray;
 }
 
 form {
