@@ -247,10 +247,30 @@ button:hover {
     color: gray;
 }
 
-#contact {
-    width: 400px;
-    margin: 0;
-    margin-left: 130px;
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.contact-image {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    margin-left: 0;
+}
+
+.contact-image img {
+    width: 60px;
+    height: auto;
+    opacity: 0.8;
 }
 
 form {
