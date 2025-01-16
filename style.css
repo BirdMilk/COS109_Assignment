@@ -247,6 +247,12 @@ button:hover {
     color: gray;
 }
 
+#contact {
+    width: 400px;
+    margin: 0;
+    margin-left: 130px;
+}
+
 form {
     display: flex;
     flex-direction: column;
